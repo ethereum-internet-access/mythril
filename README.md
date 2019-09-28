@@ -28,5 +28,5 @@ $ myth analyze StateChannel.sol > ./security-report
 $ cat ./security-report  
 
 ### Option B) Analyze on-chain smart contract (e.g., on Ropsten)
-$ myth analyze --rpc infura-ropsten -a contract-address > ./security-report  
+$ myth analyze --rpc infura-ropsten -a contract_address > ./security-report  
 $ cat ./security-report  
