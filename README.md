@@ -22,7 +22,11 @@ $ pip3 install mythril
 ### You might need to install a dependency (python-dateutil==2.8.0)
 $ pip3 install python-dateutil==2.8.0
 
-### Analyze
+### Option A) Analyze local source code
 $ cd contracts  
 $ myth analyze StateChannel.sol > ./security-report  
+$ cat ./security-report  
+
+### Option B) Analyze on-chain smart contract (e.g., on Ropsten)
+$ myth analyze --rpc infura-ropsten -a <contract-address> > ./security-report  
 $ cat ./security-report  
